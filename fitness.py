@@ -6,7 +6,7 @@ from os import listdir
 from PIL import Image as PImage
 import time
 
-path = r'C:\Users\Davidlwl\Desktop\Python Projects\fitness'
+path = r'C:\Users\\Desktop\Python Projects\fitness'
 def loadImages(path):
     # return array of images
     imagesList = listdir(path)
