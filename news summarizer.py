@@ -76,8 +76,14 @@ for article_url in to_summarize[:10]:
     
 
 while True:
-    raw = int(input('Which article would you like to read?'))
-    webbrowser.open(to_summarize[raw-1])
+    news_list = []
+    raw = input('Which articles would you like to read?')
+    for i in raw.replace(',', ''):
+        news_list.append(i)
+    for x in news_list:
+        webbrowser.open_new_tab(to_summarize[int(x)-1])
+    
+
     
 
             
