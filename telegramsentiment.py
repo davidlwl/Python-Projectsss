@@ -40,7 +40,10 @@ def get_tweet_sentiment(tweet):
     else:
         return 'negative'
     
-print(get_tweet_sentiment(""))
+while True:
+    tweet = input('please input phrase/word \n>')
+    print(get_tweet_sentiment(tweet))
+    print('-'*60)
     
     
         
